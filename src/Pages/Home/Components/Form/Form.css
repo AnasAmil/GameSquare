@@ -1,0 +1,150 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.left{
+    width: 30px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+
+.rect{
+    width: 30px;
+    height: 170px;
+}
+
+#yellow{
+    background-color: #FCAD3A;
+}
+
+#blue{
+    background-color: #26BBEC;
+}
+
+#pink{
+    background-color: #EE5281;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 420px;
+    width: 35%;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50px;
+}
+
+
+#illustration{
+    width: 450px;
+    height: 350px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    justify-content: space-between; 
+}
+
+
+.Defaultinput{
+    width: 95%;
+    height: 50px;
+    border-radius: 50px !important;
+    border: 1px solid #C5C5C5;
+    padding-left: 20px;
+}
+
+.ErrorInput{
+    border: 1px solid #F11717;
+}
+
+
+.Defaultinput:focus{
+    outline: none !important;
+    border: 1px solid black;
+}
+
+
+
+.error{
+    font-size: 12px;
+    color: #F11717;
+    align-self: flex-end;
+    margin-right: 20px;
+}
+
+::placeholder {
+    color: black;
+}
+
+#btn:disabled{
+    height: 50px;
+    border-radius: 50px;
+    padding: 0;
+    width: 150px;
+    align-self: flex-end;
+    border: none;
+    background-color: #EE5281;
+    color: white;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+#btn:enabled{
+    height: 50px;
+    border-radius: 50px;
+    padding: 0;
+    width: 150px;
+    align-self: flex-end;
+    border: none;
+    background-color: #EE5281;
+    color: white;
+    font-weight: bold;
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+
+        .container{
+            flex-wrap: wrap-reverse;
+        }
+
+        .left{
+            display: none;
+        }
+        
+        .rect{
+            display: none;
+        }
+
+        #illustration{
+            width: 50%;
+            height: 40%;
+            margin-top: 50px;
+        }
+
+        .formContainer{
+            width: 80%;
+        }
+
+        #btn{
+            width: 100%;
+        }
+}
